@@ -61,16 +61,21 @@ function GameBoard() {
   };
 
   return (
-    <div className="bg-yellow-500 flex flex-col items-center justify-center">
-      <div>{hint}</div>
-      <div>
+    <div className="bg-purple-200 flex flex-col items-center justify-center">
+      <div className="mb-10 font-bold text-3xl">{hint}</div>
+      <div className="text-2xl">
         <input
-          className="border-gray"
+          className="p-1 rounded-xl"
           type="text"
           value={choiceNum || ""}
           onChange={onChangeChoice}
         />
-        <button onClick={onClickCheck}>OK</button>
+        <button
+          className="bg-red-400 text-white font-bold ml-2 p-1 rounded-xl  "
+          onClick={onClickCheck}
+        >
+          OK
+        </button>
       </div>
     </div>
   );

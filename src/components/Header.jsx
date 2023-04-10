@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <div className="bg-green-700 text-yellow-100 flex justify-evenly min-w-full">
-      <div>up&down</div>
-      <div>GameWorld</div>
+    <div className="bg-pink-300 text-white flex justify-between items-center min-w-full text-3xl font-bold">
+      <div className="ml-[50px]">UP & DOWN</div>
+      <div className="mr-[50px]">🍦</div>
     </div>
   );
 }

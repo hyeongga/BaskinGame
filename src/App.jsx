@@ -17,9 +17,9 @@ function App() {
     <AppContext.Provider
       value={{ point, setPoint, myPoint, setMyPoint, addPoint, setAdd }}
     >
-      <div className="bg-red-200 grid grid-rows-[50px_minmax(100px,auto)] h-screen">
+      <div className="bg-red-200 grid grid-rows-[70px_minmax(100px,auto)] h-screen">
         <Header />
-        <div className="grid grid-cols-2 w-full ">
+        <div className="grid grid-cols-[minmax(100px,auto)_400px] w-full ">
           <GameBoard />
           <GameResult />
         </div>
